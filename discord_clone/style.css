@@ -49,15 +49,17 @@ body {
 }
 
 .header-and-hero {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 83vh;
+    height: 600px;
     background-color:#5562e8;
 }
 
 header {
     display: flex;
+    justify-content: center;
     width: 1200px;
     gap: 50px;
     height: 70px;
@@ -86,3 +88,64 @@ header button {
     border-radius: 20px;
 }
 
+.hero {
+    color: rgb(250, 248, 248);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 30px 100px;
+    text-align: center;
+    width: 850px;
+    height: 70em;
+}
+
+.hero-left {
+    position: absolute;
+    left: -500px;
+    bottom: 0;
+}
+
+.hero-right {
+    position: absolute;
+    right: -480px;
+    bottom: 0;
+}
+
+.hero p:nth-child(1) {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+    font-weight: 900;
+}
+
+.hero p:nth-child(2) {
+    line-height: 1.5em;
+    margin-top: 20px;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.hero .buttons {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    border: none;
+}
+
+.hero button:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero button:nth-child(2) {
+    color: white;
+    background-color: rgb(35, 32, 32);
+}
