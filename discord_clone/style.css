@@ -149,3 +149,63 @@ header button {
     color: white;
     background-color: rgb(35, 32, 32);
 }
+
+/* hero ends here */
+
+.invite {
+    padding: 120px 120px;
+}
+
+.invite-card {
+    display: flex;
+    height: 400px;
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.invite-card .left-part {
+    width: 35%;
+    position: relative;
+    height: 400px;
+    background-color: #1e1e1e;
+}
+
+
+.invite-card .right-part {
+    width: 65%;
+    height: 400px;
+    background-color: #333;
+}
+
+.invite-card .left-part div {
+    background-color: #373636;
+    position: relative;
+    left: -40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: rgb(208, 206, 206);
+    font-size: 1.4em;
+    padding: 5px;
+    width: 150px;
+    padding-right: 25px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.invite-card .left-part div:nth-child(1) {
+    margin-top: 10px;
+}
+
+.invite-card .left-part div:nth-child(2) {
+    color: white;
+    font-size: 1.5em;
+    padding: 7px;
+    padding-right: 25px;
+    left: -65px;
+}
+
+
+
+
+
