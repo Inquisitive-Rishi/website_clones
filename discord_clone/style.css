@@ -44,7 +44,38 @@ table {
 
 /* default styles above */
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 header {
-    max-height: 50px;
-    background-color: rgb(154, 60, 235);
+    display: flex;
+    padding: 10px 70px;
+
+    align-items: center;
+    height: 80px;
+    background-color: rgb(107, 110, 235);
+}
+
+.discord-logo img {
+    display: flex;
+    height: 3em;
+    width: auto;
+}
+
+header ul {
+    display: flex;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 35px;
+    font-weight: 700;
+}
+
+header button {
+    padding: 10px;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
 }
