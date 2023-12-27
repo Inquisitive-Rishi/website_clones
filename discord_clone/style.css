@@ -154,41 +154,26 @@ header button {
 
 .invite-section {
     padding: 150px;
-    padding-left: 200px;
 }
 
-.invite-section .invite-card {
-    padding-top: 15px;
-    height: 450px;
-    width: 300px;
-    border-left: 150px solid #100e17;
-    color: white;
-    border-radius: 10px;
-    background-color: #14171d;
-    position: relative;
+.invite-left, .invite-right {
+    width: 50%;
 }
 
-.invite-card div {
-    background-color: #373636;
-    position: relative;
-    left: -220px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    color: rgb(208, 206, 206);
-    font-size: 1.4em;
-    padding: 5px;
+.invite-left {
+    display: flex;
+}
+
+.invite-card-left {
+    height: 400px;
     width: 150px;
-    padding-right: 25px;
-    box-shadow: 5px 5px 10px black;
-} 
-
-.invite-card div:nth-child(2) {
-    left: -260px;
-    color: white;
+    background-color: #14131b;
+    border-radius: 10px 0 0 10px;
 }
 
-
-
-
-
-
+.invite-card-right {
+    height: 400px;
+    width: 300px;
+    background-color: #1b1b1c;
+    border-radius: 0 10px 10px 0;
+}
