@@ -153,7 +153,9 @@ header button {
 /* hero ends here */
 
 .invite-section {
+    display: flex;
     padding: 200px;
+    justify-content: center;
 }
 
 .invite-left, .invite-right {
@@ -197,3 +199,65 @@ header button {
     left: -100px;
     color: white;
 }
+
+.invite-card-right div {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 6%;
+    font-size: 12px;
+}
+
+.invite-card-right div:nth-child(1) {
+    font-size: 1.3em;
+    font-weight: 550;
+}
+
+.invite-card-right div .avatar {
+    flex-shrink: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.invite-card-right div .avatar-description {
+    display: block;
+    padding: 0;
+}
+
+.invite-card-right div .avatar-description div {
+    display: block;
+    padding: 0;
+}
+
+.invite-card-right div .avatar-description .avatar-txt-top {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    gap: 3px;
+}
+
+.invite-card-right div .avatar-description .avatar-txt-top .avatar-title {
+    color: #f5c453;
+}
+
+.invite-card-right div .avatar-description .avatar-txt-top .avatar-date {
+    font-size: 10px;
+    color: #777676;
+}
+
+.invite-right h1 {
+    font-weight: 900;
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.invite-right p {
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
+
+
+
