@@ -156,6 +156,7 @@ header button {
     display: flex;
     padding: 200px;
     justify-content: center;
+    gap: 100px;
 }
 
 .invite-left, .invite-right {
@@ -259,5 +260,35 @@ header button {
     font-size: 1.3em;
 }
 
+.status-card-section {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 200px;
+    background-color: beige;
+}
+
+.scs-left, .scs-right {
+    width: 50%;
+}
+
+.status-card {
+    height: 400px;
+    width: 400px;
+    background-color: #1b1b1c;
+    border-radius: 5px;
+}
+
+.scs-left h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+
+.scs-left p {
+    line-height: 1.5em;
+    font-size: 1.3em;
+}
 
 
