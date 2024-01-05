@@ -1,5 +1,6 @@
 major breakpoints:
 
+- 1280px
 - 1020px
 - 750px
 
