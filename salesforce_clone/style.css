@@ -12,6 +12,8 @@
   --font-title-small: 2rem;
   --font-medium: 1.25rem;  /*20px */
   --font-btn: 1rem;
+
+  --font-title-line-height: 3.5rem;
 }
 
 /* Box sizing rules */
@@ -128,7 +130,13 @@ li {
   height: 90%;
 }
 
-/* #090738 */
+button {
+  background-color: var(--clr-light-blue);
+  color: white;
+  font-weight: 600;
+  padding: .875rem;
+}
+
 header button {
   background-color: var(--clr-header-btn);
   display: flex;
@@ -160,8 +168,76 @@ nav ul li {
 
 .container {
   margin: 0 auto;
-  max-width: 1250px;
+  max-width: 1300px;
   background-color:azure;
+}
+
+.title {
+  font-size: var(--font-title-small);
+  font-weight: 900;
+}
+
+.hero-1 .title {
+  line-height: var(--font-title-line-height);
+  font-size: var(--font-title);
+}
+
+.hero-1 .container {
+  display: flex;
+}
+
+.hero-1 .container .left {
+  max-width: 50%;
+  text-wrap: wrap;
+}
+
+.hero-2 .cards, .hero-4 .cards, .hero-5 .cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+}
+
+.hero-2 .card, .hero-4 .card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  height: 200px;
+}
+
+
+.hero-5 .mini-cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, max-content));
+}
+
+.hero-5 .card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  height: 100px;
+}
+
+.wide-card:nth-child(1) .container .left {
+  width: 50%;
+}
+
+.hero-3, .hero-4, .hero-5, .hero-7, .hero-8, .wide-card-two{
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.footer-1 .container, .footer-2 .container {
+  display: flex;
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+  margin-right: auto;
+}
+
+.footer-2 .container {
+  font-size: var(--font-smallest);
+}
+
+.footer-2, .footer-2 .container {
+  color: white;
+  background-color: var(--clr-dark-blue);
 }
 
 
