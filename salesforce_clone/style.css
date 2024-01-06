@@ -1,5 +1,4 @@
 /* // https://piccalil.li/blog/a-modern-css-reset */
-@import url();
 
 :root {
   --clr-dark-blue: #032D60;
@@ -7,9 +6,9 @@
   --clr-dark-footer: rgb(3, 46, 97);
   --clr-header-btn: #2e844a;
 
-  --font-smallest: .75rem;
-  --font-smaller: .875rem;
-  --font-title: 3rem;
+  --font-smallest: .75rem; /*12px */
+  --font-smaller: .875rem; /*14px */
+  --font-title: 3rem; 
   --font-title-small: 2rem;
   --font-medium: 1.25rem;  /*20px */
   --font-btn: 1rem;
@@ -132,6 +131,9 @@ li {
 /* #090738 */
 header button {
   background-color: var(--clr-header-btn);
+  display: flex;
+  flex-shrink: 0;
+  max-width: max-content;
   color: white;
   border-radius: 5px;
   font-size: var(--font-smaller);
@@ -142,4 +144,14 @@ header button {
 
 nav ul li {
   letter-spacing: 0.04rem;
+}
+
+@media (max-width: 1280px) {
+  .header-top-right button {
+    font-size: var(--font-smallest);
+  }
+
+  .header-top-left nav, .header-top-right .contact-us-txt, .header-top-right p, .header-top-right .globe-logo {
+    display: none;
+  }
 }
