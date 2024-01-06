@@ -96,6 +96,7 @@ li {
 
 .header-top nav ul, .header-top, .header-top-right, .header-top-left{
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -153,6 +154,14 @@ nav ul li {
   color: white;
   background-color: var(--clr-dark-blue);
   padding: 0.75rem;
+}
+
+/* header section finish */
+
+.container {
+  margin: 0 auto;
+  max-width: 1250px;
+  background-color:azure;
 }
 
 
