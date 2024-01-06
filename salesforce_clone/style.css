@@ -104,7 +104,6 @@ li {
 }
 
 .header-top {
-  background-color: #eee;
   padding: 1rem 2rem;
   align-items: center;
   justify-content: space-between;
@@ -146,6 +145,18 @@ nav ul li {
   letter-spacing: 0.04rem;
 }
 
+.header-bottom {
+  font-size: var(--font-smallest);
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  color: white;
+  background-color: var(--clr-dark-blue);
+  padding: 0.75rem;
+}
+
+
+
 @media (max-width: 1280px) {
   .header-top-right button {
     font-size: var(--font-smallest);
@@ -155,3 +166,4 @@ nav ul li {
     display: none;
   }
 }
+
