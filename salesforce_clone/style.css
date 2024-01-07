@@ -23,6 +23,9 @@
   --line-height-small: 1rem;
   --line-height-medium: 2rem;
   --line-height-large: 3rem;
+
+  --padding-section-large: 4rem;
+  --padding-section-medium: 3rem;
 }
 
 /* Box sizing rules */
@@ -150,6 +153,7 @@ button:nth-child(2) {
   background-color: white;
   color: var(--clr-light-blue);
   border: 1px solid var(--clr-light-blue);
+  margin-left: 1.5rem;
 }
 
 .hero-2 button, .hero-4 button{
@@ -204,6 +208,15 @@ nav ul li {
   margin-bottom: var(--margin-bottom-medium);
 }
 
+.hero-1 (top/bottom)
+.hero-2 (bottom)
+.hero-3 (top/bottom)
+.hero-4 (bottom)
+.hero-5 (top) /* above our technology helps*/
+.hero-7 (top)
+
+
+
 p[class='txt'] {
   margin-bottom: var(--margin-bottom-large);
 }
@@ -232,11 +245,14 @@ p[class='txt'] {
 .hero-2 .cards, .hero-4 .cards, .hero-5 .cards {
   width: 100%;
   display: grid;
+  justify-content: center;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, clamp(150px, 250px, 300px));
+  margin-bottom: var(--margin-bottom-large);
 }
 
-.hero-2 .card, .hero-4 .card {
+.hero-2 .card, .hero-4 .card, .hero-5 .card{
+  width: 80%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   height: 200px;
 }
@@ -285,7 +301,6 @@ p[class='txt'] {
 
 
 
-
 @media (max-width: 1280px) {
   .header-top-right button {
     font-size: var(--font-smallest);
@@ -296,3 +311,8 @@ p[class='txt'] {
   }
 }
 
+@media (max-width: 1020px) {
+  .footer-1 {
+    display: none;
+  }
+}
