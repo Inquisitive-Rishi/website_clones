@@ -176,6 +176,7 @@ nav ul li {
 /* header section finish */
 
 .container {
+  position: relative;
   padding: 1rem;
   margin: 0 auto;
   max-width: 1300px;
@@ -187,6 +188,10 @@ nav ul li {
   line-height: var(--font-title-line-height-small);
   font-weight: 900;
   margin-bottom: var(--margin-bottom-medium);
+}
+
+p[class='txt'] {
+  margin-bottom: var(--margin-bottom-large);
 }
 
 .hero-1 .title {
@@ -252,6 +257,8 @@ nav ul li {
   color: white;
   background-color: var(--clr-dark-blue);
 }
+
+
 
 
 
