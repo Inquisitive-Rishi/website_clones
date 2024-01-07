@@ -227,10 +227,6 @@ p[class='txt'] {
   margin-bottom: var(--margin-bottom-large);
 }
 
-.hero-1 .container {
-  display: flex;
-}
-
 .hero-1 .container .left {
   max-width: 50%;
   text-wrap: wrap;
@@ -255,6 +251,10 @@ p[class='txt'] {
   width: 80%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   height: 200px;
+}
+
+.txt {
+  margin-bottom: var(--margin-bottom-large);
 }
 
 .hero-2 .cards .card {
