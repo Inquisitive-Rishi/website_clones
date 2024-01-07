@@ -13,7 +13,16 @@
   --font-medium: 1.25rem;  /*20px */
   --font-btn: 1rem;
 
-  --font-title-line-height: 3.5rem;
+  --font-title-line-height-large: 3rem;
+  --font-title-line-height-small: 2.5rem;
+
+  --margin-bottom-large: 2rem;
+  --margin-bottom-medium: 1rem;
+  --margin-bottom-small: 0.5rem;
+
+  --line-height-small: 1rem;
+  --line-height-medium: 2rem;
+  --line-height-large: 3rem;
 }
 
 /* Box sizing rules */
@@ -167,6 +176,7 @@ nav ul li {
 /* header section finish */
 
 .container {
+  padding: 1rem;
   margin: 0 auto;
   max-width: 1300px;
   background-color:azure;
@@ -174,12 +184,15 @@ nav ul li {
 
 .title {
   font-size: var(--font-title-small);
+  line-height: var(--font-title-line-height-small);
   font-weight: 900;
+  margin-bottom: var(--margin-bottom-medium);
 }
 
 .hero-1 .title {
-  line-height: var(--font-title-line-height);
   font-size: var(--font-title);
+  line-height: var(--font-title-line-height-large);
+  margin-bottom: var(--margin-bottom-large);
 }
 
 .hero-1 .container {
