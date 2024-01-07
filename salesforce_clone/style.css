@@ -146,6 +146,19 @@ button {
   padding: .875rem;
 }
 
+button:nth-child(2) {
+  background-color: white;
+  color: var(--clr-light-blue);
+  border: 1px solid var(--clr-light-blue);
+}
+
+.hero-2 button, .hero-4 button{
+  background-color: white;
+  color: var(--clr-light-blue);
+  border: 1px solid var(--clr-light-blue);
+}
+
+
 header button {
   background-color: var(--clr-header-btn);
   display: flex;
@@ -183,6 +196,7 @@ nav ul li {
   background-color:azure;
 }
 
+
 .title {
   font-size: var(--font-title-small);
   line-height: var(--font-title-line-height-small);
@@ -209,10 +223,17 @@ p[class='txt'] {
   text-wrap: wrap;
 }
 
+.hero-2 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-2 .cards, .hero-4 .cards, .hero-5 .cards {
+  width: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+  grid-template-columns: repeat(auto-fit, clamp(150px, 250px, 300px));
 }
 
 .hero-2 .card, .hero-4 .card {
@@ -220,6 +241,9 @@ p[class='txt'] {
   height: 200px;
 }
 
+.hero-2 .cards .card {
+  text-align: left;
+}
 
 .hero-5 .mini-cards {
   display: grid;
